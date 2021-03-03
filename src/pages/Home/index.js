@@ -38,7 +38,6 @@ export default ( {history} ) => {
 					placeholder="Search a movie or serie"
 					onChange={handleSearchTextChange} />
 					<Grid className={classes.buttonsContainer}>
-						<Button variant="contained" onClick={handleCleanTextClick}>Clean</Button>
 						<Button className={classes.searchButton} variant="contained" color="primary" size="large" onClick={handleSearchTextClick}>Search</Button>
 					</Grid>
 			</Card>

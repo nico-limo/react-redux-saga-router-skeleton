@@ -8,6 +8,7 @@ const centeredStyleObj = {
 
 export default makeStyles({
     container: {
+        background: 'black',
         height: '100vh',
         flexDirection: 'column',
         ...centeredStyleObj
