@@ -13,13 +13,9 @@ export default ( {history} ) => {
 		setSearchText(event.target.value)
 	}
 
-
-	const handleCleanTextClick = event => {
-		setSearchText('')
-	}
-	const handleSearchTextClick = event => {
-		history.push(`/results?movieName=${searchText}`);
-	}
+	const handleSearchTextClick = event => history.push(`/results?movieName=${searchText}`);
+	const handleLoginClick = event => history.push(`/login`);
+	const handleRegisterClick = event => history.push(`/register`);
 
 	return (
 		<Container className={classes.container}>
@@ -38,7 +34,9 @@ export default ( {history} ) => {
 					placeholder="Search a movie or serie"
 					onChange={handleSearchTextChange} />
 					<Grid className={classes.buttonsContainer}>
+						<Button className={classes.searchButton} variant="contained" color="primary" size="large" onClick={handleLoginClick}>Login</Button>
 						<Button className={classes.searchButton} variant="contained" color="primary" size="large" onClick={handleSearchTextClick}>Search</Button>
+						<Button className={classes.searchButton} variant="contained" color="primary" size="large" onClick={handleRegisterClick}>Register</Button>
 					</Grid>
 			</Card>
 		</Container>

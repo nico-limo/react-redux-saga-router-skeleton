@@ -1,6 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from 'react-router-dom';
-import { useHistory } from 'react-router';
 
 import { Container, CircularProgress, Typography, Button } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
@@ -9,11 +7,11 @@ import { movieResult as movieResultSelector } from "../../redux/selectors";
 import { searchMovieById } from "../../redux/actions/search";
 
 
-export default ({ match }) => {
+export default ({ match, history }) => {
     const dispatch = useDispatch();
     const movieResult = useSelector((state) => movieResultSelector(state));
 
-    const history = useHistory();
+ 
    
     const goBackHandle = () => {
         history.goBack();
