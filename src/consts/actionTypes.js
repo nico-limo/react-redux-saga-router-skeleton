@@ -5,3 +5,7 @@ export const SEARCH_MOVIE_COMPLETE = 'SEARCH_MOVIE_COMPLETE';
 export const SEARCH_MOVIE_BY_ID_START = 'SEARCH_MOVIE_BY_ID_START';
 export const SEARCH_MOVIE_BY_ID_ERROR = 'SEARCH_MOVIE_BY_ID_ERROR';
 export const SEARCH_MOVIE_BY_ID_COMPLETE = 'SEARCH_MOVIE_BY_ID_COMPLETE';
+
+//----------------------------------------------------------------------------------------//
+//REGISTER - LOGIN - LOGOUT
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";

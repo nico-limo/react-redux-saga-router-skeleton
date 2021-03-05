@@ -3,10 +3,12 @@ const app = express();
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const cors = require('cors');
 //Import Routes
 const authRoute = require("./routes/auth");
 
 dotenv.config();
+app.use(cors());
 
 //Connect to DB
 mongoose
