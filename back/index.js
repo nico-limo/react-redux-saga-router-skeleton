@@ -24,4 +24,4 @@ app.use(bodyParser.urlencoded({ extended: false }));
 //Routes Middlewares
 app.use("/api", authRoute);
 
-app.listen(8000, () => console.log("Server Up and running"));
+app.listen(8000, () => console.log("Server Up and running at port 8000"));
